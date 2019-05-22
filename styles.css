@@ -1,0 +1,59 @@
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+img {
+  width: 600px;
+  height: 500px;
+  margin: 7px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+img:hover {
+  opacity:0.5;
+}
+ul {
+  list-style-type: none;
+  margin-left: 800px;
+}
+li {
+  display: inline;
+  padding: 5px;
+
+}
+.navbar {
+  margin: 20px;
+  padding:5px;
+
+}
+img:hover {
+  background-color: yellow;
+}
+.text{
+  color:red;
+  font-size: 20px;
+  position: absolute;
+  text-align: center;
+}
+.card-container {
+  padding: 30px;
+  background: #D3A2DA;
+  margin-left: 250px;
+  margin-right: 250px;
+  border-radius: 10px;
+}
+.new-opp-card {
+  margin: 0 auto;
+  margin-bottom: 10px;
+  padding: 8px;
+  width: 300px;
+  background: #fff;
+  border-radius: 10px;
+}
+.favorite {
+  background-color: red;
+}
