@@ -6,7 +6,7 @@
 }
 
 img {
-  width: 600px;
+  width: 500px;
   height: 500px;
   margin: 7px;
   border-radius: 10px;
@@ -41,7 +41,7 @@ img:hover {
 }
 .card-container {
   padding: 30px;
-  background: #D3A2DA;
+  background: black;
   margin-left: 250px;
   margin-right: 250px;
   border-radius: 10px;
@@ -56,4 +56,9 @@ img:hover {
 }
 .favorite {
   background-color: red;
+}
+.description {
+  margin: 10px 5px 5px 10px;
+  border: solid 5px #EE5E4F;
+  border-radius: 10px;
 }

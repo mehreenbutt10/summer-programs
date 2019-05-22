@@ -3,6 +3,7 @@ var summerbutton = $('.summer-opp-btn')
 summerbutton.on("click", appendNewOpportunity);
 
 function appendNewOpportunity() {
+  
   cardContainer.append(`
     <div>
       <p class="new-opp-card">AI4ALL
