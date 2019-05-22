@@ -4,7 +4,9 @@
   flex-wrap: wrap;
 
 }
-
+a{
+  color: yellow;
+}
 img {
   width: 500px;
   height: 500px;
@@ -28,7 +30,8 @@ li {
 .navbar {
   margin: 20px;
   padding:5px;
-
+  border-radius: 10px;
+  background-color: #EE5E4F;
 }
 img:hover {
   background-color: yellow;
@@ -41,7 +44,7 @@ img:hover {
 }
 .card-container {
   padding: 30px;
-  background: black;
+  background: #EE5E4F;
   margin-left: 250px;
   margin-right: 250px;
   border-radius: 10px;
@@ -61,4 +64,44 @@ img:hover {
   margin: 10px 5px 5px 10px;
   border: solid 5px #EE5E4F;
   border-radius: 10px;
+}
+
+.summer-opp-btn {
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  background-color: white;
+  border: solid 3px #EE5E4F;
+  border-radius: 10px;
+  text-align: center;
+  color: #EE5E4F;
+  font-size: 15px;
+  padding: 10px;
+  width: 100px;
+  transition: all 0.6s;
+  margin: 5px;
+}
+
+.summer-opp-btn:hover {
+  background-color: #EE5E4F;
+  color: white;
+}
+.delete {
+  background-color: #efef01;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  background-color: white;
+  border: solid 2px #EE5E4F;
+  border-radius: 10px;
+  text-align: center;
+  color: #EE5E4F;
+  font-size: 10px;
+  padding: 5px;
+  width: 50px;
+  transition: all 0.6s;
+  margin-left: 150px;
+}
+
+.delete:hover {
+  background-color: #EE5E4F;
+  color: white;
 }
