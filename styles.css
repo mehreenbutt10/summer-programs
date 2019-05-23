@@ -27,6 +27,11 @@ li {
   padding: 5px;
 
 }
+h3{
+  text-align: center;
+  margin-top: -15px;
+  color: white;
+}
 .navbar {
   margin: 20px;
   padding:5px;
@@ -45,15 +50,15 @@ img:hover {
 .card-container {
   padding: 30px;
   background: #EE5E4F;
-  margin-left: 250px;
-  margin-right: 250px;
+  margin-left: 330px;
+  margin-right: 330px;
   border-radius: 10px;
 }
 .new-opp-card {
   margin: 0 auto;
   margin-bottom: 10px;
   padding: 8px;
-  width: 300px;
+  width: 375px;
   background: #fff;
   border-radius: 10px;
 }
