@@ -9,7 +9,7 @@ function appendNewOpportunity() {
   cardContainer.append(`
     <div>
       <p class="new-opp-card">AI4ALL
-        <i class="fa fa-heart" style="font-size:20px;color:black;"></i>
+        <i class="material-icons">favorite</i>
         <button class="delete">Remove</button>
         <button class="priority"></button>
       </p>
@@ -35,7 +35,7 @@ function timer() {
   var timeLeft = deadline - today;
   var days = Math.floor(timeLeft / 86400);
 
-  $(".priority").html(days);
+  $(".priority").html(days + " days");
 
 
 }
