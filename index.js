@@ -1,6 +1,6 @@
 var cardContainer = $('.card-container');
 var summerbutton = $('.summer-opp-btn');
-var countDownDate = new Date("May 25, 2019 19:28:00").getTime();
+
 
 summerbutton.on("click", appendNewOpportunity);
 
@@ -11,7 +11,7 @@ function appendNewOpportunity() {
       <p class="new-opp-card">AI4ALL
         <i class="fa fa-heart" style="font-size:20px;color:black;"></i>
         <button class="delete">Remove</button>
-        <button class="priority">Priority</button>
+        <button class="priority"></button>
       </p>
     </div>
     `);
@@ -25,18 +25,20 @@ function remove () {
   event.target.parentNode.remove()
 }
 
-var x = setInterval(function() {
-  // Get today's date and time
-  var today = new Date().getTime();
-  // Find the distance between now and the count down date
-  var timeLeft = countDownDate - today;
-  // Time calculations for days, hours, minutes and seconds
-  var days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
-  // Display the result in the element with id="demo"
-  document.getElementById("ai_timer").innerHTML = "Days Left: " + days;
-   // If the count down is finished, write some text
-  if (timeLeft < 0) {
-    clearInterval(x);
-    document.getElementById("ai_timer").innerHTML = "EXPIRED";
-  }
+function timer() {
+  var deadline = new Date("28 May 2019 12:00:00 GMT");
+  deadline = (Date.parse(deadline) / 1000);
+
+  var today = new Date();
+  today = (Date.parse(today) / 1000);
+
+  var timeLeft = deadline - today;
+  var days = Math.floor(timeLeft / 86400);
+
+  $(".priority").html(days);
+
+
+}
+setInterval(function(){
+  timer();
 }, 1000);
