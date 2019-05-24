@@ -2,7 +2,17 @@
 .container {
   display: flex;
   flex-wrap: wrap;
-
+}
+/* .timer {
+  border: solid 4px red;
+  border-radius: 10px;
+  color: red;
+  margin-top: 350px;
+  margin-left: 250px;
+  margin-right: 50px;
+} */
+.timer {
+  border: solid 4px red;
 }
 a{
   color: yellow;
@@ -32,6 +42,7 @@ h3{
   margin-top: -15px;
   color: white;
 }
+
 .navbar {
   margin: 20px;
   padding:5px;
