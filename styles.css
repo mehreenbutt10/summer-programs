@@ -121,3 +121,12 @@ img:hover {
   background-color: #EE5E4F;
   color: white;
 }
+.priority {
+  border: solid 2px red;
+  border-radius: 10px;
+  background-color: red;
+  margin-left: 6px;
+  padding: 5px;
+  color: white;
+  font-size: 10px;
+}

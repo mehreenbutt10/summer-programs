@@ -11,7 +11,7 @@ function appendNewOpportunity() {
       <p class="new-opp-card">AI4ALL
         <i class="material-icons">favorite</i>
         <button class="delete">Remove</button>
-        <button class="priority"></button>
+        <span class="priority"></span>
       </p>
     </div>
     `);
