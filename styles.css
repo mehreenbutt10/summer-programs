@@ -14,11 +14,12 @@
 .timer {
   border: solid 4px red;
 }
+}
 a {
-  color: white;
+  color: #F10eF4;
 }
 img {
-  width: 700px;
+  width: 780px;
   height: 500px;
   margin: 7px;
   border-radius: 10px;
@@ -31,6 +32,7 @@ img:hover {
 ul {
   list-style-type: none;
   margin-left: 800px;
+
 }
 li {
   display: inline;
@@ -47,7 +49,8 @@ h3{
   margin: 20px;
   padding:5px;
   border-radius: 10px;
-  background-color: #EE5E4F;
+  font-size: 20px;
+  background-color: pink;
 }
 img:hover {
   background-color: yellow;
@@ -77,7 +80,11 @@ img:hover {
   background-color: red;
 }
 .description {
-  margin: 10px 5px 5px 10px;
+  margin: 5px 5px 5px 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 25px;
+  padding-left: 25px;
   border: solid 5px #EE5E4F;
   border-radius: 10px;
 }
@@ -92,7 +99,7 @@ img:hover {
   color: #EE5E4F;
   font-size: 15px;
   padding: 10px;
-  width: 100px;
+  width: 300px;
   transition: all 0.6s;
   margin: 5px;
 }

@@ -5,10 +5,10 @@ var summerbutton = $('.summer-opp-btn');
 summerbutton.on("click", appendNewOpportunity);
 
 function appendNewOpportunity() {
-
+  var program = $(this).attr('id');
   cardContainer.append(`
     <div>
-      <p class="new-opp-card">AI4ALL
+      <p class="new-opp-card">${program}
         <i class="material-icons">favorite</i>
         <button class="delete">Remove</button>
         <span class="priority"></span>
