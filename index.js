@@ -26,7 +26,7 @@ function remove () {
 }
 
 function timer() {
-  var deadline = new Date("28 May 2019 12:00:00 GMT");
+  var deadline = new Date("13 July 2019 12:00:00 GMT");
   deadline = (Date.parse(deadline) / 1000);
 
   var today = new Date();

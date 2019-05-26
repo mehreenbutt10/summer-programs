@@ -1,20 +1,8 @@
-
 .container {
   display: flex;
   flex-wrap: wrap;
 }
-/* .timer {
-  border: solid 4px red;
-  border-radius: 10px;
-  color: red;
-  margin-top: 350px;
-  margin-left: 250px;
-  margin-right: 50px;
-} */
-.timer {
-  border: solid 4px red;
-}
-}
+
 a {
   color: #F10eF4;
 }
@@ -72,7 +60,7 @@ img:hover {
   margin: 0 auto;
   margin-bottom: 10px;
   padding: 8px;
-  width: 375px;
+  width: 475px;
   background: #fff;
   border-radius: 10px;
 }
@@ -121,7 +109,7 @@ img:hover {
   padding: 5px;
   width: 50px;
   transition: all 0.6s;
-  margin-left: 150px;
+  margin-left: 30%;
 }
 
 .delete:hover {
@@ -136,4 +124,14 @@ img:hover {
   padding: 5px;
   color: white;
   font-size: 10px;
+}
+
+.deadline {
+  border: solid 2px red;
+  border-radius: 10px;
+  background-color: red;
+  padding: 5px;
+  color: white;
+  font-size: 12px;
+  width: 225px;
 }
