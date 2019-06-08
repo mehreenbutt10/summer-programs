@@ -42,6 +42,8 @@ function appendNewOpportunity(e) {
       </div>
     </div>
     `);
+    deadline();
+
     allPrograms.push({program: program});
     // console.log(allPrograms);
     //
@@ -57,16 +59,16 @@ function appendNewOpportunity(e) {
 
 completed.on("click", remove);
 function remove(event) {
-  var toDotoDelete = event.target.parentNode.children[0].textContent;
-  var indexToDelete = allPrograms.indexOf(toDotoDelete);
-  allPrograms.splice(indexToDelete, 1);
-  var toDoString = JSON.stringify(allPrograms);
-  localStorage.setItem('programs', toDoString);
+  // var toDotoDelete = event.target.parentNode.children[0];
+  // var indexToDelete = allPrograms.indexOf(toDotoDelete);
+  // allPrograms.splice(indexToDelete, 1);
+  // var toDoString = JSON.stringify(allPrograms);
+  // localStorage.setItem('programs', toDoString);
   event.target.parentNode.remove()
 }
 
 function timer() {
-  var deadline = new Date("13 July 2019 12:00:00 GMT");
+  var deadline = new Date("10 July 2019 12:00:00 GMT");
   deadline = (Date.parse(deadline) / 1000);
 
   var today = new Date();
@@ -79,6 +81,9 @@ function timer() {
 
 
 }
-setInterval(function(){
-  timer();
-}, 1000);
+
+function deadline() {
+  setInterval(function(){
+    timer();
+  }, 1000);
+}
