@@ -1,69 +1,58 @@
-var allPrograms = [];
-var cardContainer = $('.card-container');
 var summerbutton = $('.summer-opp-btn');
-
-// JSON.parse var allPrograms = localStorage.getItem('program')|| [];
+var cardContainer = $('.card-container');
 var allPrograms = JSON.parse(localStorage.getItem('programs')) || [];
 
 function appendAllPrograms() {
-  allPrograms.forEach(function(opportunity){
+
+  allPrograms.forEach(function(program){
     cardContainer.append(`
       <div class="row">
-        <div class="col s8">
-        <p class="new-opp-card">${opportunity.program}
-          <i class="material-icons">favorite</i></p>
-          </div>
-          <div class="col s4">
-          <p><button class="delete">Remove</button>
+        <p class="new-opp-card">${program}
+          <i class="material-icons">favorite</i>
+          <button class="complete">Complete</button>
           <span class="priority"></span>
         </p>
-        </div>
       </div>
       `);
   })
 }
 appendAllPrograms();
+
 summerbutton.on("click", appendNewOpportunity);
 
-function appendNewOpportunity(e) {
-  e.preventDefault();
+function appendNewOpportunity() {
   var program = $(this).attr('id');
 
   cardContainer.append(`
     <div class="row">
-      <div class="col s8">
       <p class="new-opp-card">${program}
-        <i class="material-icons">favorite</i></p>
-        </div>
-        <div class="col s4">
-        <p><button class="delete">Remove</button>
+        <i class="material-icons">favorite</i>
+        <button class="complete">Complete</button>
         <span class="priority"></span>
       </p>
-      </div>
     </div>
     `);
-    deadline();
+    setStorage(program);
+}
+deadline();
 
-    allPrograms.push({program: program});
-    // console.log(allPrograms);
-    //
-    var allProgramsString = JSON.stringify(allPrograms);
-    localStorage.setItem('programs', allProgramsString);
-    console.log(localStorage);
-    // // localStorage.clear();
-
-    var completed = $('.delete');
-    var urgent = $('.priority');
-
+function setStorage(program) {
+  allPrograms.push(program);
+  var programString = JSON.stringify(allPrograms);
+  localStorage.setItem('programs', programString);
 }
 
-completed.on("click", remove);
-function remove(event) {
-  // var toDotoDelete = event.target.parentNode.children[0];
-  // var indexToDelete = allPrograms.indexOf(toDotoDelete);
-  // allPrograms.splice(indexToDelete, 1);
-  // var toDoString = JSON.stringify(allPrograms);
-  // localStorage.setItem('programs', toDoString);
+cardContainer.on("click", ".complete", completedApp)
+
+// var completed = $('.delete');
+// var urgent = $('.priority');
+function completedApp(event) {
+  var programToDelete = event.target.parentNode.children[0].textContent;
+  var indexToDelete = allPrograms.indexOf(programToDelete);
+  allPrograms.splice(indexToDelete, 1);
+  var programString = JSON.stringify(allPrograms);
+  localStorage.setItem('programs', programString);
+
   event.target.parentNode.remove()
 }
 
@@ -77,6 +66,7 @@ function timer() {
   var timeLeft = deadline - today;
   var days = Math.floor(timeLeft / 86400);
 
+  var daysLeft = $(this).attr('.')
   $(".priority").html(days + " days");
 
 
