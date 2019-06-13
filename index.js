@@ -33,8 +33,9 @@ function appendNewOpportunity() {
     </div>
     `);
     setStorage(program);
+
 }
-deadline();
+  deadline();
 
 function setStorage(program) {
   allPrograms.push(program);
@@ -57,6 +58,7 @@ function completedApp(event) {
 }
 
 function timer() {
+  // var specificDeadline = $(this).attr('id');
   var deadline = new Date("10 July 2019 12:00:00 GMT");
   deadline = (Date.parse(deadline) / 1000);
 
@@ -66,7 +68,7 @@ function timer() {
   var timeLeft = deadline - today;
   var days = Math.floor(timeLeft / 86400);
 
-  var daysLeft = $(this).attr('.')
+  // var daysLeft = $(this).attr('.')
   $(".priority").html(days + " days");
 
 

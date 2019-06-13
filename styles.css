@@ -1,3 +1,6 @@
+/* body {
+  background-color: black;
+} */
 .container {
   display: flex;
   flex-wrap: wrap;
@@ -96,7 +99,7 @@ img:hover {
   background-color: #EE5E4F;
   color: white;
 }
-.delete {
+.complete {
   background-color: #efef01;
   -webkit-transition-duration: 0.4s; /* Safari */
   transition-duration: 0.4s;
@@ -105,14 +108,14 @@ img:hover {
   border-radius: 10px;
   text-align: center;
   color: #EE5E4F;
-  font-size: 10px;
+  font-size: 11px;
   padding: 5px;
-  width: 50px;
+  width: 75px;
   transition: all 0.6s;
-  margin-left: 30%;
+  float: right;
 }
 
-.delete:hover {
+.complete:hover {
   background-color: #EE5E4F;
   color: white;
 }
@@ -120,10 +123,11 @@ img:hover {
   border: solid 2px red;
   border-radius: 10px;
   background-color: red;
-  margin-left: 6px;
-  padding: 5px;
+  margin-right: 5px;
+  padding: 3px;
   color: white;
   font-size: 10px;
+  float: right;
 }
 
 .deadline {
@@ -134,4 +138,8 @@ img:hover {
   color: white;
   font-size: 12px;
   width: 225px;
+}
+h4 {
+  padding: 15px;
+  color: red;
 }
